@@ -5,8 +5,11 @@
 }
 
 .App {
-  margin: 1rem;
+  margin: auto;
   padding: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .App header {
@@ -26,7 +29,7 @@
 
 .App .main button {
   margin-bottom: 1rem;
-  background-color: #EAE6E5;
+  background-color: #8FCB9B;
   padding: 0.8em;
   border-radius: 10px;
   border: none;
@@ -37,5 +40,23 @@
 
 .App .main hr {
   border: 1px solid #12130F;
+}
+
+.App .main .song {
+  margin: 1rem 0;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #8FCB9B;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+
+.App .main .song h4 {
+  font-size: 1.2em;
+}
+
+.App .main .song a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=App.css.map */

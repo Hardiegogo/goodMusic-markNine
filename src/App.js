@@ -1,7 +1,15 @@
-
+import {data} from './data'
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  const [selectedGenre,setSelectedGenre]=useState("Hip-hop");
+
+  const handleClick=(genre)=>{
+    setSelectedGenre(genre)
+    
+  }
   return (
     <div className="App">
     <header>
@@ -15,10 +23,22 @@ function App() {
       </header>
       
       <div className="main">
-        <button>Hip-hop</button>
-        <button>Bollywood</button>
-        <button>Chill-lofi</button>
+        {
+          Object.keys(data).map(genre=>{
+            return <button onClick={(e)=> handleClick(genre)}>{genre}</button>
+          })
+        }
         <hr />
+
+        {data[selectedGenre].map(song=>{
+          return <div className="song">
+            <h4>{song.name}</h4>
+            <a href={song.spotifyUrl}> 👉 Link</a>
+            <p>Rating: {song.rating}</p>
+          </div>
+        })}
+        
+        
       </div>
       
     </div>

@@ -5,8 +5,9 @@
 }
 
 .App {
-    margin: 1rem;
+    margin : auto;
     padding: 1rem;
+    width: fit-content;
 
     header{
         margin-bottom: 1rem;
@@ -23,7 +24,7 @@
     .main{
         button{
             margin-bottom: 1rem;
-            background-color: #EAE6E5;
+            background-color: #8FCB9B;
             padding: 0.8em;
             border-radius: 10px;
             border:none;
@@ -36,6 +37,23 @@
         }
         hr{
             border: 1px solid #12130F;
+        }
+
+        .song{
+            margin: 1rem 0;
+            padding: 1rem;
+            box-sizing: border-box;
+            
+            background-color: #8FCB9B;
+            border-radius: 10px;
+            h4{
+                font-size: 1.2em;
+            }
+            font-size: 0.9em;
+            a{
+                text-decoration: none;
+                
+            }
         }
     }
 }
