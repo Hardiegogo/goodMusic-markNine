@@ -14,7 +14,7 @@ function App() {
     <div className="App">
     <header>
         <div className="heading" >
-          <img src="https://img.icons8.com/material/36/000000/portable-speaker2.png"/>
+          <img alt="music icon" src="https://img.icons8.com/material/36/000000/portable-speaker2.png"/>
           <h1>goodMusic</h1>
         </div>
 
