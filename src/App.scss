@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #12130F;
+}
+
+.App {
+    margin: 1rem;
+    padding: 1rem;
+
+    header{
+        margin-bottom: 1rem;
+        .heading{
+            display: flex;
+            margin-bottom: 1rem;
+            img{
+                margin-right: 0.5rem;
+            }
+            
+        }
+    }
+
+    .main{
+        button{
+            margin-bottom: 1rem;
+            background-color: #EAE6E5;
+            padding: 0.8em;
+            border-radius: 10px;
+            border:none;
+            margin-right: 1rem;
+            cursor: pointer;
+            color: #12130F;
+            
+
+            
+        }
+        hr{
+            border: 1px solid #12130F;
+        }
+    }
+}
